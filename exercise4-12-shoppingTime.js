@@ -30,7 +30,7 @@ function shoppingTime(memberId, money) {
     return 'Mohon maaf, uang tidak cukup'
   }
   // Jika memberId & money kosong 
-  if (memberId === undefined && money === undefined) {
+  if (memberId === null && money === null) {
     return 'Mohon maaf, toko X hanya berlaku untuk member saja'
   }
   
@@ -72,4 +72,3 @@ console.log(shoppingTime('82Ku8Ma742', 170000));
 // changeMoney: 120000 }
 console.log(shoppingTime('', 2475000)); //Mohon maaf, toko X hanya berlaku untuk member saja
 console.log(shoppingTime('234JdhweRxa53', 15000)); //Mohon maaf, uang tidak cukup
-console.log(shoppingTime()); ////Mohon maaf, toko X hanya berlaku untuk member saja
